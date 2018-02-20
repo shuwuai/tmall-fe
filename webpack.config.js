@@ -56,6 +56,10 @@ var config = {
             image           : __dirname + '/src/image'
         }
     },
+    devServer: {
+        host: '0.0.0.0',
+        disableHostCheck: true
+    },
     plugins: [
         // 独立通用模块到js/base.js
         new webpack.optimize.CommonsChunkPlugin({
